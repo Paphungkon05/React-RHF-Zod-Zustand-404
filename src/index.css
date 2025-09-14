@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+html, body, #root { height: 100%; }
+body {
+  color: rgb(30 41 59);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image:
+    radial-gradient(40rem 40rem at 20% 10%, rgba(59,130,246,.12), transparent 60%),
+    radial-gradient(32rem 32rem at 90% 0%, rgba(147,51,234,.10), transparent 60%),
+    radial-gradient(28rem 28rem at 10% 90%, rgba(16,185,129,.10), transparent 60%),
+    linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  background-attachment: fixed;
+}
+
+.container-app { max-width: 72rem; margin: 0 auto; padding: 1.5rem; }
+.card {
+  background: rgba(255,255,255,.7);
+  backdrop-filter: blur(8px);
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,.06);
+  border: 1px solid rgba(255,255,255,.4);
+  padding: 1.25rem;
+}
+h1,h2,h3,h4 { text-align: center; letter-spacing: -.015em; }
+hr { border: 0; height: 1px; margin: 1.5rem 0; background: transparent; }
+
+.input, .select, .textarea {
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid rgb(226 232 240);
+  background: rgba(255,255,255,.8);
+  padding: .5rem .875rem;
+  outline: none;
+}
+.input:focus, .select:focus, .textarea:focus {
+  box-shadow: 0 0 0 6px rgba(56,189,248,.25);
+  border-color: rgb(56 189 248);
+}
+.button {
+  display: inline-flex; align-items: center; gap: .5rem;
+  border-radius: 0.75rem; border: 1px solid rgb(226 232 240);
+  background: rgba(255,255,255,.8); padding: .5rem 1rem;
+  transition: .15s ease;
+}
+.button:hover { box-shadow: 0 8px 16px rgba(0,0,0,.06); transform: translateY(-1px); }
