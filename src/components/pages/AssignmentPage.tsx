@@ -7,8 +7,8 @@ export default function AssignmentPage() {
     <section className="max-w-4xl mx-auto">
       <h1 className="text-3xl font-bold mb-4">ระบบถอนรายวิชา</h1>
       <CourseForm />
-      <CourseList />
-      <CourseDrop />
+      <CourseList />   {/* แสดงรายวิชาทั้งหมด */}
+      <CourseDrop />   {/* แสดงรายวิชาที่ถูกถอน */}
     </section>
   );
 }
