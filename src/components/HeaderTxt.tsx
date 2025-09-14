@@ -1,24 +1,12 @@
-import { useState } from 'react'
-
-export default function HeaderText ({ title , txtSize } : { title : string , txtSize : string }) {
-    //const title: string = "CS-MJU"
-    //const [count, setCount] = useState(0)
-
-    return (
-        <>
-            <h1 style={{ fontSize: `${count + 20}px` }} className={status ? "green-txt" : "red-txt"}>{name}</h1>
-        </>
-    )
-}type HeaderTextProps = {
+type HeaderTxtProps = {
   title: string
-  txtSize: string
+  txtSize?: string
 }
 
-export default function HeaderText({ title, txtSize }: HeaderTextProps) {
+export default function HeaderTxt({ title, txtSize = "text-3xl" }: HeaderTxtProps) {
   return (
-    <h1 style={{ fontSize: txtSize }} className="text-green-600 font-bold text-center">
+    <h1 className={`${txtSize} font-bold text-center`}>
       {title}
     </h1>
   )
 }
-
